@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">1<a href="1.html"><img src="green_tea_01.jpeg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">2<a href="1.html"><img src="5f88a9bc9e9fe400190099cf.jpeg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">3<a href="1.html"><img src="close-up-of-green-tea-in-cup-on-table-royalty-free-image-1584380328.jpg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">4<a href="1.html"><img src="Does-Green-Tea-Reduce-the-Risk-of-Cancer_.jpg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">5<a href="1.html"><img src="glass+mugs+of+green+tea.jpg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">6<a href="1.html"><img src="green-tea-kettle-732x549-thumbnail.jpg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">7<a href="1.html"><img src="Mice-study-Green-tea-shows-promise-for-food-allergies_wrbm_large.jpg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">8<a href="1.html"><img src="what-happens-if-i-drink-green-tea-everyday.jpg" alt="" class="img-responsive"></a></div>
+        <div class="swiper-slide">9<a href="1.html"><img src="" alt="" class="img-responsive"></a></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
